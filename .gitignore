@@ -38,3 +38,7 @@ out/
 
 ### Kotlin ###
 .kotlin
+
+### DB Info ###
+/src/main/resources/application.properties
+
