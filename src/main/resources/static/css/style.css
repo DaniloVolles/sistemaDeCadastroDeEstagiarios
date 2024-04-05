@@ -1,0 +1,18 @@
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-nav .nav-item {
+    flex: 1;
+    text-align: center;
+}
+
+.navbar-nav .nav-link {
+    transition: background-color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #c8cbcf; /* Cor de fundo quando passar o mouse */
+}

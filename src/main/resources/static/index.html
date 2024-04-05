@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Cadastro de Estagiários</title>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#personal">Dados Pessoais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#complementary">Dados Complementares</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#documents">Documentação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#academic">Formação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#bank">Dados Bancários</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#workplace">Dados Funcionais</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container p-5">
+
+
+
+        <form id="personal" class="section">
+            <div class="mb-3">
+
+                <h1>Dados Pessoais</h1>
+
+                <label for="name" class="form-label">Nome Completo</label>
+                <input type="text" class="form-control" id="name" placeholder="Digite seu Nome">
+
+                <label for="marital-status" class="form-label">Estado Civil</label>
+                <input type="text" class="form-control" id="marital-status" placeholder="Digite seu estado civil">
+
+                <label for="nationality" class="form-label">Nacionalidade</label>
+                <input type="text" class="form-control" id="nationality" placeholder="Digite sua nacionalidade">
+
+                <label for="birthdate" class="form-label">Data de Nascimento</label>
+                <input type="text" class="form-control" id="birthdate" placeholder="Digite sua data de nascimento">
+
+                <label for="birth-place" class="form-label">Naturalidade</label>
+                <input type="text" class="form-control" id="birth-place" placeholder="Digite sua Naturalidade">
+
+            </div>
+        </form>
+
+        <hr>
+
+        <form id="complementary" class="section">
+            <div class="mb-3">
+
+                <h1>Dados Complementares</h1>
+
+                <label for="father-name" class="form-label">Nome do Pai</label>
+                <input type="text" class="form-control" id="father-name" placeholder="Digite o nome do seu pai">
+
+                <label for="mother-name" class="form-label">Nome da Mãe</label>
+                <input type="text" class="form-control" id="mother-name" placeholder="Digite o nome da sua mãe">
+
+                <label for="address" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="address" placeholder="Digite seu endereço">
+
+                <label for="address-number" class="form-label">Número</label>
+                <input type="text" class="form-control" id="address-number" placeholder="Digite o número do seu endereço">
+
+                <label for="neighborhood" class="form-label">Bairro</label>
+                <input type="text" class="form-control" id="neighborhood" placeholder="Digite seu bairro">
+
+                <label for="municipality" class="form-label">Município</label>
+                <input type="text" class="form-control" id="municipality" placeholder="Digite seu Município">
+
+                <label for="cep" class="form-label">CEP</label>
+                <input type="text" class="form-control" id="cep" placeholder="Digite seu CEP">
+
+                <label for="ddd-phone" class="form-label">DDD</label>
+                <input type="text" class="form-control" id="ddd-phone" placeholder="Digite o DDD do seu telefone residencial">
+
+                <label for="phone" class="form-label">Telefone residencial</label>
+                <input type="text" class="form-control" id="phone" placeholder="Digite seu telefone residencial">
+
+                <label for="ddd-cellphone" class="form-label">DDD</label>
+                <input type="text" class="form-control" id="ddd-cellphone" placeholder="Digite o DDD do seu telefone celular">
+
+                <label for="cellphone" class="form-label">Telefone celular</label>
+                <input type="text" class="form-control" id="cellphone" placeholder="Digite seu telefone celular">
+
+                <label for="email" class="form-label">E-mail</label>
+                <input type="text" class="form-control" id="email" placeholder="Digite seu endereço de e-mail">
+
+            </div>
+        </form>
+
+
+        <form id="documents" class="section">
+            <div class="mb-3">
+                <h1>Documentos</h1>
+
+                <label for="cpf" class="form-label">CPF</label>
+                <input type="text" class="form-control" id="cpf" placeholder="Digite seu CPF">
+
+                <label for="rg" class="form-label">RG</label>
+                <input type="text" class="form-control" id="rg" placeholder="Digite seu RG">
+
+                <label for="rg-issuer" class="form-label">Órgão Expedidor</label>
+                <input type="text" class="form-control" id="rg-issuer" placeholder="Digite o órgão expedidor do RG">
+
+                <label for="rg-uf" class="form-label">UF</label>
+                <input type="text" class="form-control" id="rg-uf" placeholder="Digite o UF do RG">
+
+                <label for="rg-issue-date" class="form-label">Data de Emissão do RG</label>
+                <input type="text" class="form-control" id="rg-issue-date" placeholder="Digite a data de emissão do RG">
+
+                <label for="voter-registration" class="form-label">Título de Eleitor</label>
+                <input type="text" class="form-control" id="voter-registration" placeholder="Digite seu título de eleitor">
+
+                <label for="voter-registration-zone" class="form-label">Zona Eleitoral</label>
+                <input type="text" class="form-control" id="voter-registration-zone" placeholder="Digite sua zona eleitoral">
+
+                <label for="voter-registration-section" class="form-label">Seção Eleitoral</label>
+                <input type="text" class="form-control" id="voter-registration-section" placeholder="Digite sua seção eleitoral">
+
+                <label for="pis" class="form-label">PIS</label>
+                <input type="text" class="form-control" id="pis" placeholder="Digite seu PIS">
+            </div>
+        </form>
+
+
+
+        <form id="academic" class="section">
+            <div class="mb-3">
+                <h1>Curso de Formação</h1>
+
+                <label for="formation-course" class="form-label">Nome do Curso</label>
+                <input type="text" class="form-control" id="formation-course" placeholder="Digite o nome do curso de formação">
+
+                <label for="formation-course-date-start" class="form-label">Data de Início do Curso</label>
+                <input type="text" class="form-control" id="formation-course-date-start" placeholder="Digite a data de início do curso">
+
+                <label for="formation-course-date-end" class="form-label">Data de Término do Curso</label>
+                <input type="text" class="form-control" id="formation-course-date-end" placeholder="Digite a data de término do curso">
+
+                <label for="formation-course-institution" class="form-label">Instituição</label>
+                <input type="text" class="form-control" id="formation-course-institution" placeholder="Digite a instituição do curso de formação">
+            </div>
+        </form>
+
+
+        <form id="bank" class="section">
+            <div class="mb-3">
+                <h1>Dados Bancários</h1>
+
+                <label for="bank-name" class="form-label">Nome do Banco</label>
+                <input type="text" class="form-control" id="bank-name" placeholder="Digite o nome do banco">
+
+                <label for="bank-branch-number" class="form-label">Número da Agência</label>
+                <input type="text" class="form-control" id="bank-branch-number" placeholder="Digite o número da agência">
+
+                <label for="bank-account-number" class="form-label">Número da Conta</label>
+                <input type="text" class="form-control" id="bank-account-number" placeholder="Digite o número da conta">
+
+                <label for="bank-account-type" class="form-label">Tipo de Conta</label>
+                <select class="form-select" id="bank-account-type">
+                    <option value="corrente">Corrente</option>
+                    <option value="poupanca">Poupança</option>
+                    <option value="salario">Salário</option>
+                </select>
+            </div>
+        </form>
+
+
+        <form id="workplace" class="section">
+            <div class="mb-3">
+                <h1>Dados Funcionais</h1>
+
+                <label for="department" class="form-label">Lotação</label>
+                <input type="text" class="form-control" id="department" placeholder="Enter department">
+
+                <label for="supervisor" class="form-label">Supervisor</label>
+                <input type="text" class="form-control" id="supervisor" placeholder="Enter supervisor">
+
+                <label for="schedule" class="form-label">Horário</label>
+                <input type="text" class="form-control" id="schedule" placeholder="Enter schedule">
+            </div>
+        </form>
+
+    </div>
+
+</body>
+</html>
