@@ -7,15 +7,15 @@ import jakarta.persistence.OneToOne
 
 data class BankData(
 
-        @Id @GeneratedValue(strategy = GenerationType.AUTO)
+    @Id @GeneratedValue(strategy = GenerationType.AUTO)
         val id: Long,
 
-        @OneToOne(mappedBy = "bankData")
-        val intern: Intern? = null,
+    @OneToOne(mappedBy = "bankData")
+        val employee: Employee? = null,
 
-        val bankName: String,
-        val bankBranchNumber: String,
-        val bankAccountNumber: String,
-        val bankAccountType: String
+    val bankName: String,
+    val bankBranchNumber: String,
+    val bankAccountNumber: String,
+    val bankAccountType: String
 
 )

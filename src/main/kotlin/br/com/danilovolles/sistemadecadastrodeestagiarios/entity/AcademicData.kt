@@ -11,7 +11,7 @@ data class AcademicData(
         val id: Long,
 
         @OneToOne(mappedBy = "academicData")
-        val intern: Intern? = null,
+        val employee: Employee? = null,
 
         val formationCourse: String,
         val formationCourseDateStart: String,

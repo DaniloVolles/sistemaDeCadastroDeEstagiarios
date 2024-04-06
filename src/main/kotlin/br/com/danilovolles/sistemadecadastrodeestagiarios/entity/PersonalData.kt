@@ -11,7 +11,7 @@ data class PersonalData(
         val id: Long,
 
         @OneToOne(mappedBy = "personalData")
-        val intern: Intern? = null,
+        val employee: Employee? = null,
 
         val name: String,
         val maritalStatus: String,

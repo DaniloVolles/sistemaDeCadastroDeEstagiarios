@@ -1,6 +1,5 @@
 package br.com.danilovolles.sistemadecadastrodeestagiarios.entity
 
-import jakarta.persistence.Entity
 import jakarta.persistence.GeneratedValue
 import jakarta.persistence.GenerationType
 import jakarta.persistence.Id
@@ -12,7 +11,7 @@ data class DocumentData(
         val id: Long,
 
         @OneToOne(mappedBy = "documentData")
-        val intern: Intern? = null,
+        val employee: Employee? = null,
 
         val cpf: String,
 

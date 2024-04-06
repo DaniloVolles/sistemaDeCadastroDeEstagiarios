@@ -6,7 +6,7 @@ import jakarta.persistence.GenerationType
 import jakarta.persistence.Id
 
 @Entity
-data class Intern (
+data class Employee (
 
         @Id @GeneratedValue(strategy = GenerationType.AUTO)
         val id: Long,
