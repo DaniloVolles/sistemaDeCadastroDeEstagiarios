@@ -1,7 +1,7 @@
 package br.com.danilovolles.sistemadecadastrodeestagiarios.controller
 
 import br.com.danilovolles.sistemadecadastrodeestagiarios.entity.Employee
-import br.com.danilovolles.sistemadecadastrodeestagiarios.repository.InternRepository
+import br.com.danilovolles.sistemadecadastrodeestagiarios.repository.EmployeeRepository
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation.DeleteMapping
 import org.springframework.web.bind.annotation.GetMapping
@@ -14,25 +14,25 @@ import java.util.Optional
 
 @RestController
 @RequestMapping("/interns")
-class InternController {
+class EmployeeController {
 
     @Autowired
-    private lateinit var internRepository: InternRepository
+    private lateinit var employeeRepository: EmployeeRepository
 
     // POST
     @PostMapping("/")
-    fun saveIntern(@RequestBody employee: Employee) = this.internRepository.save(employee)
+    fun saveIntern(@RequestBody employee: Employee) = this.employeeRepository.save(employee)
 
     // GET All
     @GetMapping("/list")
-    fun getAllInterns(): List<Employee> = internRepository.findAll()
+    fun getAllInterns(): List<Employee> = employeeRepository.findAll()
 
     // GET by Id
     @GetMapping("/{id}")
-    fun getInternById(@PathVariable("id") id: Long): Optional<Employee> = internRepository.findById(id)
+    fun getInternById(@PathVariable("id") id: Long): Optional<Employee> = employeeRepository.findById(id)
 
     // DELETE by Id
     @DeleteMapping("/{id}")
-    fun deleteInternById(@PathVariable("id") id: Long) = internRepository.deleteById(id)
+    fun deleteInternById(@PathVariable("id") id: Long) = employeeRepository.deleteById(id)
 
 }
