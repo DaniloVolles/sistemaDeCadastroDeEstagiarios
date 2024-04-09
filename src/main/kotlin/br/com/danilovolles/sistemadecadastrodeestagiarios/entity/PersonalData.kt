@@ -1,10 +1,7 @@
 package br.com.danilovolles.sistemadecadastrodeestagiarios.entity
 
-import jakarta.persistence.Entity
-import jakarta.persistence.GeneratedValue
-import jakarta.persistence.GenerationType
-import jakarta.persistence.Id
-import jakarta.persistence.OneToOne
+import jakarta.persistence.*
+import org.jetbrains.annotations.NotNull
 
 @Entity
 data class PersonalData(
@@ -12,7 +9,9 @@ data class PersonalData(
         @Id @GeneratedValue(strategy = GenerationType.AUTO)
         val id: Long,
 
-        @OneToOne(mappedBy = "personalData")
+        @NotNull
+        @OneToOne
+        @JoinColumn(name = "employee_id")
         val employee: Employee? = null,
 
         val name: String,
