@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController
 import java.util.Optional
 
 @RestController
-@RequestMapping("/interns")
+@RequestMapping("/employee")
 class EmployeeController {
 
     @Autowired
@@ -34,5 +34,8 @@ class EmployeeController {
     // DELETE by Id
     @DeleteMapping("/{id}")
     fun deleteInternById(@PathVariable("id") id: Long) = employeeRepository.deleteById(id)
+
+    @DeleteMapping("/")
+    fun deleteAllInterns() = employeeRepository.deleteAll()
 
 }
