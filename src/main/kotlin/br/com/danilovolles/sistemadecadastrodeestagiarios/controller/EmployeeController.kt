@@ -21,7 +21,7 @@ class EmployeeController {
 
     // POST
     @PostMapping("/")
-    fun saveIntern(@RequestBody employee: Employee) = this.employeeRepository.save(employee)
+    fun saveEmployee(@RequestBody employee: Employee) = this.employeeRepository.save(employee)
 
     // GET All
     @GetMapping("/list")

@@ -12,9 +12,8 @@ data class PersonalData(
         @NotNull
         @OneToOne
         @JoinColumn(name = "employee_id")
-        val employee: Employee? = null,
+        var employee: Employee,
 
-        val name: String,
         val maritalStatus: String,
         val nationality: String,
         val birthDate: String,

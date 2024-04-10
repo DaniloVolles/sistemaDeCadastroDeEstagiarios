@@ -13,6 +13,7 @@ data class Employee (
         val id: Long,
 
         val admissionDate: String,
+        val name: String,
 
         @OneToOne(mappedBy = "employee")
         val personalData: PersonalData? = null,
